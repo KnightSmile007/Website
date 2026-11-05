@@ -1,0 +1,6 @@
+{
+  "name": "tax filing",
+  "description": "Premium GST, Taxation & Accounting Services. Your Business. Our Compliance.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
