@@ -353,25 +353,67 @@
         background: radial-gradient(circle at 50% 45%, rgba(26, 42, 32, 0.5) 0%, transparent 70%);
       }
 
-      html.dark-theme .center-toggle-group {
-        background: rgba(22, 35, 27, 0.7);
-        border-color: rgba(230, 234, 227, 0.12);
+      /* View Mode Switcher in Dark Theme */
+      html.dark-theme .view-toggle-bar {
+        background: rgba(18, 28, 22, 0.88);
+        border: 1px solid rgba(230, 234, 227, 0.18);
+        box-shadow: 0 4px 18px rgba(0, 0, 0, 0.45);
       }
 
-      html.dark-theme .center-mode-btn.active {
+      html.dark-theme .view-toggle-btn {
+        color: #9EB0A3;
+      }
+
+      html.dark-theme .view-toggle-btn svg {
+        stroke: #9EB0A3;
+      }
+
+      html.dark-theme .view-toggle-btn:hover {
+        color: #FFFFFF;
+      }
+
+      html.dark-theme .view-toggle-btn:hover svg {
+        stroke: #FFFFFF;
+      }
+
+      html.dark-theme .view-toggle-btn.active {
         background: #E6EAE3;
-        color: #0E1612;
+        color: #0E1612 !important;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.35);
       }
 
-      html.dark-theme .finish-preset-pill {
-        background: rgba(22, 35, 27, 0.8);
-        border-color: rgba(230, 234, 227, 0.12);
+      html.dark-theme .view-toggle-btn.active span {
+        color: #0E1612 !important;
+      }
+
+      html.dark-theme .view-toggle-btn.active svg {
+        stroke: #0E1612 !important;
+      }
+
+      /* 3D Control Dock in Dark Theme */
+      html.dark-theme .three-control-dock {
+        background: rgba(18, 28, 22, 0.92);
+        border: 1px solid rgba(230, 234, 227, 0.18);
+        box-shadow: 0 8px 24px rgba(0, 0, 0, 0.55);
+      }
+
+      html.dark-theme .three-dock-status {
+        background: rgba(230, 234, 227, 0.12);
+        border-color: rgba(230, 234, 227, 0.2);
         color: #E6EAE3;
       }
 
-      html.dark-theme .finish-preset-pill.active {
-        background: rgba(212, 195, 118, 0.2);
-        border-color: #D4C376;
+      html.dark-theme .three-dock-hint {
+        color: #9EB0A3;
+      }
+
+      html.dark-theme .finish-swatch.active {
+        border-color: var(--accent-gold);
+      }
+
+      html.dark-theme .glass-halo {
+        background: radial-gradient(circle, rgba(22, 35, 27, 0.7) 0%, rgba(14, 22, 18, 0.2) 75%);
+        border-color: rgba(230, 234, 227, 0.12);
       }
 
       html.dark-theme .glass-service-card {
@@ -404,89 +446,468 @@
         border-color: rgba(212, 195, 118, 0.25);
       }
 
+      /* Compliance Calendar Wrapper in Dark Theme */
+      html.dark-theme .compliance-calendar-wrapper {
+        background: rgba(18, 28, 22, 0.85);
+        border-color: rgba(230, 234, 227, 0.14);
+        box-shadow: 0 20px 50px rgba(0, 0, 0, 0.45);
+      }
+
+      html.dark-theme #document-checklist,
+      html.dark-theme #why-choose,
+      html.dark-theme #contact {
+        background: rgba(18, 28, 22, 0.45) !important;
+      }
+
+      /* Calendar Month Switcher & Controls in Dark Theme */
+      html.dark-theme .calendar-month-switcher {
+        background: rgba(22, 35, 27, 0.7);
+        border: 1px solid rgba(230, 234, 227, 0.16);
+      }
+
+      html.dark-theme .month-switch-btn {
+        color: #9EB0A3;
+      }
+
+      html.dark-theme .month-switch-btn:hover {
+        color: #FFFFFF;
+        background: rgba(230, 234, 227, 0.12);
+      }
+
+      html.dark-theme .month-switch-btn.active {
+        background: #E6EAE3;
+        color: #0E1612 !important;
+        border-color: #E6EAE3;
+      }
+
+      html.dark-theme .month-switch-btn.active span {
+        color: #0E1612 !important;
+      }
+
+      html.dark-theme .month-switch-btn.active .active-dot {
+        background: #0E1612;
+      }
+
+      /* Calendar Filter Tabs in Dark Theme */
       html.dark-theme .calendar-filter-btn {
-        background: rgba(22, 35, 27, 0.55);
-        color: var(--ink-secondary);
-        border-color: rgba(230, 234, 227, 0.12);
+        background: rgba(22, 35, 27, 0.65);
+        color: #9EB0A3;
+        border-color: rgba(230, 234, 227, 0.14);
+      }
+
+      html.dark-theme .calendar-filter-btn:hover {
+        color: #FFFFFF;
+        border-color: rgba(230, 234, 227, 0.35);
       }
 
       html.dark-theme .calendar-filter-btn.active {
         background: #E6EAE3;
-        color: #0E1612;
+        color: #0E1612 !important;
         border-color: #E6EAE3;
       }
 
-      html.dark-theme .calendar-month-btn {
-        background: rgba(22, 35, 27, 0.5);
-        color: var(--ink-secondary);
-        border-color: rgba(230, 234, 227, 0.12);
+      /* Calendar Sync Buttons in Dark Theme */
+      html.dark-theme .calendar-sync-btn {
+        background: rgba(22, 35, 27, 0.85);
+        color: #E6EAE3;
+        border-color: rgba(230, 234, 227, 0.2);
       }
 
-      html.dark-theme .calendar-month-btn.active {
+      html.dark-theme .calendar-sync-btn:hover {
         background: #E6EAE3;
         color: #0E1612;
         border-color: #E6EAE3;
       }
 
+      html.dark-theme .calendar-sync-btn.secondary {
+        background: rgba(212, 195, 118, 0.16);
+        color: #F3F4EE;
+        border-color: rgba(212, 195, 118, 0.35);
+      }
+
+      html.dark-theme .calendar-sync-btn.secondary:hover {
+        background: var(--accent-gold);
+        color: #0E1612;
+        border-color: var(--accent-gold);
+      }
+
+      /* Calendar Date Badge & Priority Statuses */
+      html.dark-theme .calendar-date-badge {
+        background: rgba(212, 195, 118, 0.18);
+        border: 1px solid rgba(212, 195, 118, 0.35);
+        box-shadow: 0 4px 14px rgba(0, 0, 0, 0.35);
+      }
+
+      html.dark-theme .calendar-date-badge .calendar-day-num {
+        color: #FFFFFF;
+      }
+
+      html.dark-theme .calendar-date-badge .calendar-month-txt {
+        color: var(--accent-gold);
+      }
+
+      html.dark-theme .status-priority {
+        background: rgba(239, 68, 68, 0.2);
+        color: #FCA5A5;
+        border: 1px solid rgba(239, 68, 68, 0.45);
+      }
+
+      html.dark-theme .status-upcoming {
+        background: rgba(234, 179, 8, 0.2);
+        color: #FDE047;
+        border: 1px solid rgba(234, 179, 8, 0.45);
+      }
+
+      html.dark-theme .status-standard {
+        background: rgba(230, 234, 227, 0.12);
+        color: #E6EAE3;
+        border: 1px solid rgba(230, 234, 227, 0.22);
+      }
+
+      html.dark-theme .calendar-form-tag {
+        background: rgba(212, 195, 118, 0.18);
+        color: var(--accent-gold);
+        border: 1px solid rgba(212, 195, 118, 0.3);
+      }
+
+      html.dark-theme .calendar-card-penalty {
+        background: rgba(239, 68, 68, 0.14);
+        color: #FECACA;
+        border: 1px solid rgba(239, 68, 68, 0.28);
+        border-left: 3.5px solid #EF4444;
+      }
+
+      html.dark-theme .calendar-action-btn {
+        background: rgba(230, 234, 227, 0.08);
+        border-color: rgba(230, 234, 227, 0.16);
+        color: #E6EAE3;
+      }
+
+      html.dark-theme .calendar-card:hover .calendar-action-btn {
+        background: #E6EAE3;
+        color: #0E1612;
+        border-color: #E6EAE3;
+      }
+
+      html.dark-theme .card-sync-subtle-btn {
+        background: rgba(230, 234, 227, 0.08);
+        border-color: rgba(230, 234, 227, 0.16);
+        color: #E6EAE3;
+      }
+
+      html.dark-theme .card-sync-subtle-btn:hover {
+        background: #E6EAE3;
+        color: #0E1612;
+      }
+
+      /* =========================================================
+         LATE FEE & PENALTY CALCULATOR (DARK THEME CONTRAST FIX)
+         ========================================================= */
       html.dark-theme .calculator-panel {
         box-shadow: 0 20px 50px rgba(0, 0, 0, 0.45);
       }
 
-      html.dark-theme .calc-result-box {
-        background: rgba(16, 26, 20, 0.8);
-        border: 1px solid rgba(230, 234, 227, 0.12);
+      html.dark-theme .calc-result-card {
+        background: rgba(16, 26, 20, 0.95);
+        border: 1px solid rgba(230, 234, 227, 0.18);
+        box-shadow: 0 16px 42px rgba(0, 0, 0, 0.6);
       }
 
+      html.dark-theme .calc-result-badge {
+        color: var(--accent-gold);
+        font-weight: 700;
+      }
+
+      html.dark-theme .calc-total-label {
+        color: #9EB0A3;
+      }
+
+      html.dark-theme .calc-total-amount {
+        color: #FFFFFF;
+      }
+
+      html.dark-theme .calc-total-row {
+        border-bottom-color: rgba(230, 234, 227, 0.14);
+      }
+
+      html.dark-theme .calc-breakdown-row {
+        color: #E6EAE3;
+      }
+
+      html.dark-theme .calc-breakdown-row strong {
+        color: #FFFFFF;
+        font-weight: 700;
+      }
+
+      html.dark-theme .calc-breakdown-item {
+        color: #B5C4B9;
+      }
+
+      html.dark-theme .calc-breakdown-row.rule-row {
+        border-top-color: rgba(230, 234, 227, 0.14);
+      }
+
+      html.dark-theme .calc-rule-text {
+        color: #FDFEFA;
+        background: rgba(212, 195, 118, 0.22);
+        border: 1px solid rgba(212, 195, 118, 0.45);
+        font-weight: 600;
+      }
+
+      html.dark-theme .calc-action-block {
+        border-top-color: rgba(230, 234, 227, 0.14);
+      }
+
+      html.dark-theme .calc-action-note {
+        color: #9EB0A3;
+      }
+
+      html.dark-theme .calc-toggle-group {
+        background: rgba(22, 35, 27, 0.75);
+        border: 1px solid rgba(230, 234, 227, 0.14);
+      }
+
+      html.dark-theme .calc-toggle-label {
+        color: #E6EAE3;
+      }
+
+      html.dark-theme .calc-range-slider {
+        background: rgba(230, 234, 227, 0.2);
+      }
+
+      html.dark-theme .calc-range-slider::-webkit-slider-thumb {
+        background: var(--accent-gold);
+        border: 2px solid #0E1612;
+      }
+
+      html.dark-theme .calc-slider-val {
+        color: var(--accent-gold);
+        background: rgba(212, 195, 118, 0.18);
+        border-color: rgba(212, 195, 118, 0.4);
+      }
+
+      html.dark-theme .calc-range-markers {
+        color: #9EB0A3;
+      }
+
+      html.dark-theme .calc-hint {
+        color: #9EB0A3;
+      }
+
+      /* =========================================================
+         DOCUMENT CHECKLIST GENERATOR (DARK THEME CONTRAST FIX)
+         ========================================================= */
       html.dark-theme .checklist-panel {
         box-shadow: 0 20px 50px rgba(0, 0, 0, 0.45);
       }
 
-      html.dark-theme .check-item-card {
-        background: rgba(22, 35, 27, 0.65);
-        border-color: rgba(230, 234, 227, 0.12);
+      html.dark-theme .checklist-meta-pill {
+        background: rgba(22, 35, 27, 0.75);
+        border: 1px solid rgba(230, 234, 227, 0.14);
       }
 
-      html.dark-theme .check-actions-card {
-        background: rgba(20, 32, 25, 0.85);
+      html.dark-theme .checklist-meta-pill .meta-label {
+        color: #9EB0A3;
+      }
+
+      html.dark-theme .checklist-meta-pill .meta-val {
+        color: #FFFFFF;
+      }
+
+      html.dark-theme .check-item-card {
+        background: rgba(22, 35, 27, 0.75);
         border-color: rgba(230, 234, 227, 0.14);
       }
 
+      html.dark-theme .check-item-card:hover {
+        background: rgba(28, 44, 34, 0.9);
+        border-color: rgba(212, 195, 118, 0.35);
+      }
+
+      html.dark-theme .check-item-title {
+        color: #E6EAE3;
+      }
+
+      html.dark-theme .check-item-desc {
+        color: #9EB0A3;
+      }
+
+      html.dark-theme .check-mandate-badge.mandatory {
+        background: rgba(239, 68, 68, 0.2);
+        color: #FCA5A5;
+        border: 1px solid rgba(239, 68, 68, 0.38);
+      }
+
+      html.dark-theme .check-mandate-badge.optional {
+        background: rgba(212, 195, 118, 0.18);
+        color: #FDE047;
+        border: 1px solid rgba(212, 195, 118, 0.38);
+      }
+
+      html.dark-theme .checklist-footer-bar {
+        background: rgba(18, 28, 22, 0.9);
+        border: 1px solid rgba(230, 234, 227, 0.15);
+      }
+
+      html.dark-theme .checklist-footer-info h4 {
+        color: #E6EAE3;
+      }
+
+      html.dark-theme .checklist-footer-info p {
+        color: #9EB0A3;
+      }
+
+      html.dark-theme .checklist-copy-btn {
+        background: rgba(230, 234, 227, 0.1);
+        border-color: rgba(230, 234, 227, 0.2);
+        color: #E6EAE3;
+      }
+
+      html.dark-theme .checklist-copy-btn:hover {
+        background: #E6EAE3;
+        color: #0E1612;
+      }
+
+      /* =========================================================
+         FAQ ACCORDIONS & FILTERS (DARK THEME CONTRAST FIX)
+         ========================================================= */
       html.dark-theme .faq-card {
+        background: rgba(22, 35, 27, 0.65);
+        border-color: rgba(230, 234, 227, 0.14);
         box-shadow: 0 8px 24px rgba(0, 0, 0, 0.35);
       }
 
+      html.dark-theme .faq-card:hover {
+        background: rgba(28, 44, 34, 0.85);
+        border-color: rgba(212, 195, 118, 0.35);
+      }
+
       html.dark-theme .faq-card.open {
-        background: rgba(24, 38, 30, 0.95);
-        border-color: rgba(212, 195, 118, 0.3);
+        background: rgba(24, 38, 30, 0.98);
+        border-color: rgba(212, 195, 118, 0.4);
         box-shadow: 0 14px 40px rgba(0, 0, 0, 0.55);
+      }
+
+      html.dark-theme .faq-cat-badge {
+        color: var(--accent-gold);
+      }
+
+      html.dark-theme .faq-question-title {
+        color: #E6EAE3;
+      }
+
+      html.dark-theme .faq-answer-text {
+        color: #B5C4B9;
       }
 
       html.dark-theme .faq-icon-pill {
         background: rgba(230, 234, 227, 0.08);
         color: var(--ink-primary);
+        border-color: rgba(230, 234, 227, 0.16);
+      }
+
+      html.dark-theme .faq-card.open .faq-icon-pill {
+        background: var(--accent-gold);
+        color: #0E1612;
+        border-color: var(--accent-gold);
       }
 
       html.dark-theme .faq-highlight-pill {
-        background: rgba(212, 195, 118, 0.12);
-        color: #E6EAE3;
-        border-color: rgba(212, 195, 118, 0.22);
+        background: rgba(212, 195, 118, 0.16);
+        color: #F3F4EE;
+        border-left: 3px solid var(--accent-gold);
+        border-top: 1px solid rgba(212, 195, 118, 0.25);
+        border-right: 1px solid rgba(212, 195, 118, 0.25);
+        border-bottom: 1px solid rgba(212, 195, 118, 0.25);
       }
 
       html.dark-theme .faq-filter-btn {
-        background: rgba(22, 35, 27, 0.55);
-        color: var(--ink-secondary);
-        border-color: rgba(230, 234, 227, 0.12);
+        background: rgba(22, 35, 27, 0.65);
+        color: #9EB0A3;
+        border-color: rgba(230, 234, 227, 0.14);
+      }
+
+      html.dark-theme .faq-filter-btn:hover {
+        color: #FFFFFF;
+        border-color: rgba(230, 234, 227, 0.35);
       }
 
       html.dark-theme .faq-filter-btn.active {
         background: #E6EAE3;
-        color: #0E1612;
+        color: #0E1612 !important;
         border-color: #E6EAE3;
       }
 
       html.dark-theme .faq-advisory-banner {
-        background: rgba(20, 32, 25, 0.85);
-        border-color: rgba(230, 234, 227, 0.14);
+        background: rgba(20, 32, 25, 0.9);
+        border-color: rgba(230, 234, 227, 0.16);
+      }
+
+      /* =========================================================
+         BUTTONS & PILLS (HIGH CONTRAST DARK THEME RULES)
+         ========================================================= */
+      html.dark-theme .pill-primary-forest {
+        background: #E6EAE3;
+        color: #0E1612 !important;
+      }
+
+      html.dark-theme .pill-primary-forest:hover {
+        background: #FFFFFF;
+        color: #0E1612 !important;
+      }
+
+      html.dark-theme .form-submit-btn {
+        background: #E6EAE3;
+        color: #0E1612 !important;
+      }
+
+      html.dark-theme .form-submit-btn:hover {
+        background: #FFFFFF;
+        color: #0E1612 !important;
+      }
+
+      html.dark-theme .email-action-btn {
+        background: #E6EAE3;
+        color: #0E1612 !important;
+      }
+
+      html.dark-theme .email-action-btn:hover:not(:disabled) {
+        background: #FFFFFF;
+        color: #0E1612 !important;
+      }
+
+      html.dark-theme .email-action-btn.edit-btn {
+        background: rgba(230, 234, 227, 0.12);
+        color: #E6EAE3 !important;
+        border-color: rgba(230, 234, 227, 0.25);
+      }
+
+      html.dark-theme .email-action-btn.edit-btn:hover {
+        background: rgba(230, 234, 227, 0.22);
+      }
+
+      html.dark-theme .email-apply-btn {
+        background: #E6EAE3;
+        color: #0E1612 !important;
+      }
+
+      html.dark-theme .email-apply-btn:hover {
+        background: #FFFFFF;
+        color: #0E1612 !important;
+      }
+
+      html.dark-theme .email-otp-verify-btn {
+        background: #E6EAE3;
+        color: #0E1612 !important;
+      }
+
+      html.dark-theme .email-otp-verify-btn:hover {
+        background: #FFFFFF;
+        color: #0E1612 !important;
+      }
+
+      html.dark-theme .email-otp-resend-btn {
+        color: var(--accent-gold);
       }
 
       html.dark-theme .contact-card {
@@ -497,8 +918,8 @@
       html.dark-theme .form-input,
       html.dark-theme .form-select,
       html.dark-theme .form-textarea {
-        background: rgba(16, 25, 20, 0.85);
-        border-color: rgba(230, 234, 227, 0.16);
+        background: rgba(16, 25, 20, 0.9);
+        border-color: rgba(230, 234, 227, 0.18);
         color: #E6EAE3;
       }
 
@@ -507,52 +928,85 @@
       html.dark-theme .form-textarea:focus {
         background: rgba(20, 32, 25, 0.98);
         border-color: #E6EAE3;
-        box-shadow: 0 0 0 3px rgba(230, 234, 227, 0.12);
+        box-shadow: 0 0 0 3px rgba(230, 234, 227, 0.14);
       }
 
       html.dark-theme .form-input.is-verified {
-        background: rgba(20, 42, 30, 0.85);
+        background: rgba(20, 42, 30, 0.9);
         border-color: #2EE073;
       }
 
       html.dark-theme .email-status-badge.verified {
-        background: rgba(46, 224, 115, 0.16);
+        background: rgba(46, 224, 115, 0.18);
         color: #86EFAC;
-        border-color: rgba(46, 224, 115, 0.35);
+        border-color: rgba(46, 224, 115, 0.4);
       }
 
       html.dark-theme .email-suggestion-card {
-        background: rgba(22, 35, 27, 0.9);
-        border-color: rgba(212, 195, 118, 0.3);
+        background: rgba(22, 35, 27, 0.95);
+        border-color: rgba(212, 195, 118, 0.35);
         color: #E6EAE3;
       }
 
+      html.dark-theme .email-suggestion-card strong {
+        color: var(--accent-gold);
+      }
+
       html.dark-theme .email-otp-panel {
-        background: rgba(18, 28, 22, 0.96);
-        border-color: rgba(230, 234, 227, 0.18);
-        box-shadow: 0 12px 36px rgba(0, 0, 0, 0.6);
+        background: rgba(18, 28, 22, 0.98);
+        border-color: rgba(230, 234, 227, 0.2);
+        box-shadow: 0 12px 36px rgba(0, 0, 0, 0.65);
+      }
+
+      html.dark-theme .email-otp-title {
+        color: #E6EAE3;
+      }
+
+      html.dark-theme .email-otp-close {
+        color: #9EB0A3;
+      }
+
+      html.dark-theme .email-otp-close:hover {
+        color: #E6EAE3;
       }
 
       html.dark-theme .email-otp-sim-alert {
-        background: rgba(24, 38, 30, 0.85);
+        background: rgba(24, 38, 30, 0.9);
         border-left-color: var(--accent-gold);
         color: #E6EAE3;
       }
 
       html.dark-theme .email-otp-code-pill {
-        background: rgba(230, 234, 227, 0.12);
-        color: #E6EAE3;
+        background: rgba(212, 195, 118, 0.2);
+        color: #FFFFFF;
+        border: 1px solid rgba(212, 195, 118, 0.35);
       }
 
       html.dark-theme .email-otp-pin-input {
         background: rgba(14, 22, 18, 0.95);
-        border-color: rgba(230, 234, 227, 0.2);
-        color: #E6EAE3;
+        border-color: rgba(230, 234, 227, 0.25);
+        color: #FFFFFF;
+      }
+
+      html.dark-theme .email-otp-pin-input:focus {
+        border-color: var(--accent-gold);
+        box-shadow: 0 0 0 3px rgba(212, 195, 118, 0.2);
+      }
+
+      html.dark-theme .form-input.has-error,
+      html.dark-theme .form-select.has-error {
+        background: rgba(50, 18, 18, 0.85);
+        border-color: #F87171;
+        color: #FFFFFF;
+      }
+
+      html.dark-theme .error-hint {
+        color: #FCA5A5;
       }
 
       html.dark-theme .submission-feedback {
-        background: rgba(46, 224, 115, 0.12);
-        border-color: rgba(46, 224, 115, 0.3);
+        background: rgba(46, 224, 115, 0.15);
+        border-color: rgba(46, 224, 115, 0.35);
         color: #E6EAE3;
       }
 
@@ -709,7 +1163,7 @@
         gap: 6px;
         padding: 5px;
         border-radius: 9999px;
-        background: rgba(235, 240, 220, 0.6);
+        background: var(--glass-bg);
         border: 1px solid var(--glass-border);
         backdrop-filter: blur(12px);
         margin-bottom: 14px;
@@ -733,8 +1187,8 @@
       }
 
       .view-toggle-btn.active {
-        background: var(--ink-primary);
-        color: #FFFFFF;
+        background: var(--btn-primary);
+        color: var(--btn-text);
         box-shadow: 0 2px 8px rgba(30, 50, 39, 0.15);
       }
 
@@ -797,7 +1251,7 @@
         align-items: center;
         gap: 8px;
         padding: 6px 14px;
-        background: rgba(235, 240, 220, 0.7);
+        background: var(--glass-bg);
         border: 1px solid var(--glass-border);
         backdrop-filter: blur(14px);
         border-radius: 9999px;
@@ -1172,7 +1626,7 @@
          ========================================================= */
       .compliance-calendar-wrapper {
         margin-top: clamp(60px, 7vw, 90px);
-        background: rgba(235, 240, 220, 0.52);
+        background: var(--glass-bg);
         border: 1px solid var(--glass-border);
         border-radius: 28px;
         backdrop-filter: blur(16px);
